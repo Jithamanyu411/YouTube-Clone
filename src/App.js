@@ -5,8 +5,8 @@ import { SearchBar, VideoDetail, VideoList}  from './components';
 
 
 import youtube from './api/youtube';
-require('dotenv').config();
-console.log(process.env)
+// require('dotenv').config();
+// console.log(process.env)
 
 class App extends React.Component {
     state = {
@@ -26,7 +26,7 @@ class App extends React.Component {
             params: {
                 part: "snippet",
                 maxResults: 5,
-                key: process.env.API_KEY,
+                key: 'AIzaSyAynF6F1J2xveyfA-8YqKuUMsHRLmtkIWw',
                 q: searchTerms,
             }
         });
